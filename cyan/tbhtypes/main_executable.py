@@ -24,7 +24,7 @@ class MainExecutable(Executable):
     else:
       self.inj_func = self.lief_inject
 
-  def inject(self, tweaks: dict[str, str], tmpdir: str) -> None:
+  def inject(self, tweaks: dict[str, str], tmpdir: str, args) -> None:
     ENT_PATH = f"{self.bundle_path}/cyan.entitlements"
     PLUGINS_DIR = f"{self.bundle_path}/PlugIns"
     FRAMEWORKS_DIR = f"{self.bundle_path}/Frameworks"
@@ -72,7 +72,7 @@ class MainExecutable(Executable):
         path = shutil.copy2(path, tmpdir)
 
         e = Executable(path)
-        e.fix_common_dependencies(needed)
+        e.fix_common_dependencies(needed, args)
         e.fix_dependencies(tweaks)
 
         fpath = f"{FRAMEWORKS_DIR}/{bn}"
