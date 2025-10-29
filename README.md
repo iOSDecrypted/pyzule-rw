@@ -15,7 +15,7 @@
 - add custom entitlements to the main executable
 - thin all binaries to arm64, it can LARGELY reduce app size sometimes!
 - remove all app extensions (or just encrypted ones!)
-- not use defualt depedencies by cyan
+- not use defualt dependencies by cyan
 
 ## install instructions
 
@@ -30,7 +30,7 @@ the `zip` and `unzip` commands are *optional* dependencies, they may [fix issues
 <b>Windows Subsystem for Linux instructions</b>
 <ol>
   <li>install <a href="https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx">pipx</a></li>
-  <li>install OR update cyan: <code>pipx install --force https://github.com/iOSDecrypted/pyzule-rw/archive/refs/heads/main.zip</code></li>
+  <li>install OR update cyan: <code>pipx install --force https://github.com/iOSDecrypted/pyzule-rw/archive/main.zip</code></li>
   <li><b>if you want to change app icons (iOS NOT supported)</b>: <code>pipx inject cyan Pillow</code></li>
 </ol>
 
