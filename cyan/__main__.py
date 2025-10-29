@@ -108,7 +108,7 @@ def main() -> None:
   )
 
   parser.add_argument(
-    "--version", action="version", version="cyan v1.4.4"
+    "--version", action="version", version="cyan v1.4.5"
   )
 
   from cyan import logic
