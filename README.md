@@ -2,8 +2,6 @@
 
 ## features
 
-you can open an issue to request a feature :D !! also see my [recommended flags](https://github.com/iOSDecrypted/pyzule-rw/wiki/recommended-flags)
-
 - generate and use shareable .cyan files to configure IPAs!
 - inject deb, dylib, framework, bundle, and appex files/folders
 - automatically fix dependencies on CydiaSubstrate **(cyan uses [ElleKit](https://github.com/evelyneee/ellekit/)!)**, Cephei*, and Orion
