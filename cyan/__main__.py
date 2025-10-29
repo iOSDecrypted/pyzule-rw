@@ -65,6 +65,10 @@ def main() -> None:
     help="remove UISupportedDevices"
   )
   parser.add_argument(
+    "--no-defualt-dependencies", action="store_true",
+    help="stop using default dependencies"
+  ) 
+  parser.add_argument(
     "-w", "--no-watch", action="store_true",
     help="remove all watch apps"
   )
