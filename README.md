@@ -4,7 +4,7 @@
 
 - generate and use shareable .cyan files to configure IPAs!
 - inject deb, dylib, framework, bundle, and appex files/folders
-- automatically fix dependencies on CydiaSubstrate **(cyan uses [ElleKit](https://github.com/evelyneee/ellekit/)!)**, Cephei*, and Orion
+- optionally fix dependencies on CydiaSubstrate **(cyan uses [ElleKit](https://github.com/evelyneee/ellekit/)!)**, Cephei*, and Orion
 - copy any unknown file/folder types to app root
 - change app name, version, bundle id, and minimum os version
 - remove UISupportedDevices
@@ -15,7 +15,6 @@
 - add custom entitlements to the main executable
 - thin all binaries to arm64, it can LARGELY reduce app size sometimes!
 - remove all app extensions (or just encrypted ones!)
-- not use defualt dependencies by cyan
 
 ## install instructions
 
