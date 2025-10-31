@@ -18,7 +18,7 @@
 
 ## install instructions
 
-cyan supports **linux, macOS, WSL, and jailbroken iOS!** all either x86_64 or arm64/aarch64 !!
+cyan supports **WSL** either x86_64 or arm64/aarch64 !!
 
 first, make sure you have [ar](https://command-not-found.com/ar) and [tar](https://command-not-found.com/tar) installed
 
