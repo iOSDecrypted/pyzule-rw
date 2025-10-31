@@ -18,7 +18,7 @@
 
 ## install instructions
 
-cyan supports **WSL** either x86_64 or arm64/aarch64 !!
+cyan supports **WSL** either x86_64 or aarch64
 
 first, make sure you have [ar](https://command-not-found.com/ar) and [tar](https://command-not-found.com/tar) installed
 
@@ -30,7 +30,7 @@ the `zip` and `unzip` commands are *optional* dependencies, they may [fix issues
 <ol>
   <li>install <a href="https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx">pipx</a></li>
   <li>install OR update cyan: <code>pipx install --force https://github.com/iOSDecrypted/pyzule-rw/archive/main.zip</code></li>
-  <li><b>if you want to change app icons (iOS NOT supported)</b>: <code>pipx inject cyan Pillow</code></li>
+  <li><b>if you want to change app icons</b>: <code>pipx inject cyan Pillow</code></li>
 </ol>
 
 
