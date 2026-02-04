@@ -1,6 +1,7 @@
 import os
 import sys
 import shutil
+import platform
 from argparse import ArgumentParser
 from tempfile import TemporaryDirectory
 
@@ -32,8 +33,12 @@ def main(parser: ArgumentParser) -> None:
   # mfw when "True if True else False" HAHAHAH
   INPUT_IS_IPA = args.i.endswith(".ipa") or args.i.endswith(".tipa")
   OUTPUT_IS_IPA = args.o.endswith(".ipa") or args.o.endswith(".tipa")
+  
+  new_tmp = {}
+  if platform.system() == "Linux": # why i am even adding os check, if this is only gonna get used by us
+    new_tmp["dir"] = "/dev/shm/tmp"
 
-  with TemporaryDirectory() as tmpdir, tbhtypes.LeavingCM():
+  with TemporaryDirectory(**new_tmp) as tmpdir, tbhtypes.LeavingCM():
     app_path = tbhutils.get_app(args.i, tmpdir, INPUT_IS_IPA)
     app = tbhtypes.AppBundle(app_path)
 
