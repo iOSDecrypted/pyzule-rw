@@ -79,6 +79,10 @@ def main() -> None:
     "-g", "--remove-encrypted", action="store_true",
     help="only remove encrypted app extensions"
   )
+  parser.add_argument(
+    "--replace-existing", action="store_true",
+    help="no confirm replacement"
+  )
 
   generate_cyan(parser)
 
@@ -105,7 +109,7 @@ def generate_cyan(parser: argparse.ArgumentParser) -> None:
   if not args.output.endswith(".cyan"):
     print("[*] appended cyan file extension to output")
     args.output += ".cyan"
-  if os.path.isfile(args.output):
+  if os.path.isfile(args.output) and not args.replace_existing:
     try:
       overwrite = input(
         f"[<] {args.output} already exists. overwrite? [Y/n] "
